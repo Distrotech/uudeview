@@ -1,13 +1,9 @@
-/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+/* config.h.in.  Generated from configure.in by autoheader.  */
 
-/* Define to `unsigned' if <sys/types.h> doesn't define.  */
-#undef size_t
-
-/* Define if you have the ANSI C header files.  */
-#undef STDC_HEADERS
-
-/* Define if you can safely include both <sys/time.h> and <time.h>.  */
-#undef TIME_WITH_SYS_TIME
+/*
+ * needed for auto configuration
+ * $Id: acconfig.h,v 1.1.1.1 1996/06/06 19:41:05 fp Exp $
+ */
 
 /*
  * If your system is kinda special
@@ -56,6 +52,11 @@
  * define if you HAVE_TCL and TK version 4.1 or later 
  */
 #undef HAVE_TK
+
+/*
+ * define if your Tk can handle the Tk_CreatePhotoImageFormat hook 
+ */
+#undef TK_PHOTO
 
 /*
  * define if Tcl_Main or Tk_Main needs Tcl_AppInit as third parameter 
@@ -117,47 +118,102 @@
  */
 #undef NEED_NNTPSERVER
 
-/* Define if you have the getcwd function.  */
-#undef HAVE_GETCWD
+/*
+ * whether you want to hide your hostname behind the domain. usually
+ * undefined
+ */
+#undef HIDDENNET
 
-/* Define if you have the gettimeofday function.  */
-#undef HAVE_GETTIMEOFDAY
 
-/* Define if you have the isatty function.  */
-#undef HAVE_ISATTY
-
-/* Define if you have the popen function.  */
-#undef HAVE_POPEN
-
-/* Define if you have the <direct.h> header file.  */
+/* Define to 1 if you have the <direct.h> header file. */
 #undef HAVE_DIRECT_H
 
-/* Define if you have the <errno.h> header file.  */
+/* Define to 1 if you have the <errno.h> header file. */
 #undef HAVE_ERRNO_H
 
-/* Define if you have the <fcntl.h> header file.  */
+/* Define to 1 if you have the <fcntl.h> header file. */
 #undef HAVE_FCNTL_H
 
-/* Define if you have the <io.h> header file.  */
+/* Define to 1 if you have the `getcwd' function. */
+#undef HAVE_GETCWD
+
+/* Define to 1 if you have the `gettimeofday' function. */
+#undef HAVE_GETTIMEOFDAY
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the <io.h> header file. */
 #undef HAVE_IO_H
 
-/* Define if you have the <malloc.h> header file.  */
+/* Define to 1 if you have the `isatty' function. */
+#undef HAVE_ISATTY
+
+/* Define to 1 if you have the <malloc.h> header file. */
 #undef HAVE_MALLOC_H
 
-/* Define if you have the <memory.h> header file.  */
+/* Define to 1 if you have the <memory.h> header file. */
 #undef HAVE_MEMORY_H
 
-/* Define if you have the <pwd.h> header file.  */
+/* Define to 1 if you have the `popen' function. */
+#undef HAVE_POPEN
+
+/* Define to 1 if you have the <pwd.h> header file. */
 #undef HAVE_PWD_H
 
-/* Define if you have the <stdarg.h> header file.  */
+/* Define to 1 if you have the <stdarg.h> header file. */
 #undef HAVE_STDARG_H
 
-/* Define if you have the <sys/time.h> header file.  */
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
 #undef HAVE_SYS_TIME_H
 
-/* Define if you have the <unistd.h> header file.  */
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
 #undef HAVE_UNISTD_H
 
-/* Define if you have the <varargs.h> header file.  */
+/* Define to 1 if you have the <varargs.h> header file. */
 #undef HAVE_VARARGS_H
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
+#undef TIME_WITH_SYS_TIME
+
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#undef size_t
